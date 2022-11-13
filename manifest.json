@@ -1,0 +1,19 @@
+{
+  "name": "Night Light",
+  "version": "1",
+  "description": "Night Light automatically shifts the colors of your browser content to warmer end of the color spectrum after dark",
+  "author": "voidrlm",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/args.js", "js/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["<all_urls>", "tabs", "storage"],
+  "manifest_version": 2
+}
