@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/popup.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <span>Turn on/off night light</span>
+        <button type="button" class="switch-btn">on</button>
+      </header>
+      <main>
+        <div class="title" style="margin-bottom: 5px">Select intensity</div>
+        <input type="range" name="points" min="0" max="100" id="range" />
+        <ul>
+          <li style="background-color: #000000" data-color="#000000"></li>
+          <li style="background-color: #fff68f" data-color="#fff68f"></li>
+          <li style="background-color: #ff9329" data-color="#ff9329"></li>
+          <li style="background-color: #ff8100" data-color="#ff8100"></li>
+        </ul>
+      </main>
+    </div>
+    <script src="./js/args.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
